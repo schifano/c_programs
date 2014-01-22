@@ -1,12 +1,6 @@
 /* 
 	Name: Rachel A Schifano
-	Professor: Dr. Suh
-	Course: IT 383
-	Program 0: Program replicates the functions of cat; concatenates files.
-
-	NOTES: fopen/open, fclose/close, fread/read, fwrite/write
-	compile cc -o my_cat my_cat.c
-	ssh -X (your ulid)@ironside.idk.ilstu.edu
+	Description: Program replicates the functions of cat; concatenates files.
  */
 #include <stdio.h>
 #include <string.h>
@@ -31,9 +25,6 @@ int main(void) {
 	token = strtok(p_file, space); /* get the first token */
 	while( token != NULL)		   /* walk through each token */
 	{
-		/* printf(" \\%s", token); */
-		/* puts(token); TEST TEST TEST */
-		
 		FILE *file; /* File pointer to keep track of the file opened */
 		int c; /* tracks each character retrieved from stream */
 		/* READ and PRINT file content to command line */
@@ -58,6 +49,6 @@ int main(void) {
 		token = strtok(NULL, space);
 	}
 
-	/* don't we have to catch a final character or something? */
+	/* check if need to catch something here */
 	return 0; /* end program */
 }
