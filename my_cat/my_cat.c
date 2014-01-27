@@ -1,0 +1,50 @@
+/*
+    Name: Rachel A Schifano
+    Professor: Dr. Suh
+    Course: IT 383
+    Program 0: Program replicates the functions of cat; concatenates files.
+ 
+    1. Open and print files to the console if found, else output error message.
+    2. Echo plain text to the screen.
+    3. Create new file.
+*/
+#include <stdio.h>
+ 
+int main(int argc, char *argv[])
+{	
+	/* Echo input if the user presses enter without additional arguments */
+	if (argc == 1) {
+		int c;
+		while((c = getchar()) != EOF) {
+			putchar(c);
+		}
+		return 0;
+	}
+	/* Read input file(s) */
+	int i = 1;
+	for (i; i < argc; i++) {
+	 
+		FILE *file; /* File pointer to keep track of the file opened */
+		int c; /* tracks each character retrieved from stream */
+		 
+		/* READ and PRINT file content to command line */
+		if ((file = fopen(argv[i], "r")) != NULL) {
+			file = fopen(argv[i],"r");
+			while(1) 
+			{
+				c = fgetc(file); /* advances/gets the next character from stream */
+		        	if( feof(file) ) /* points to file object, tests for end of file */
+		        	{
+					break ;
+		        	}
+				printf("%c", c); /* sends formatted output to stdout */
+		   	}
+			fclose(file); /* close file */
+		}
+	       	else {
+			puts("No such file or directory");
+			return 0;
+		}
+	}	
+	return 0;
+}
