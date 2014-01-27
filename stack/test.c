@@ -1,8 +1,5 @@
 /* 
 	Name: Rachel A Schifano
-	Professor: Dr. Suh
-	Course: IT 383
-	Program: 0
 	Description: File that tests all operations of the stack from stack.c
  */
 

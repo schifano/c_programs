@@ -1,8 +1,5 @@
 /* 
 	Name: Rachel A Schifano
-	Professor: Dr. Suh
-	Course: IT 383
-	Program: 0
 	Header File
  */
 
