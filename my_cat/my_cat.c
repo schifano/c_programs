@@ -1,8 +1,6 @@
 /*
     Name: Rachel A Schifano
-    Professor: Dr. Suh
-    Course: IT 383
-    Program 0: Program replicates the functions of cat; concatenates files.
+	Description: Program replicates the functions of cat; concatenates files.
  
     1. Open and print files to the console if found, else output error message.
     2. Echo plain text to the screen.
