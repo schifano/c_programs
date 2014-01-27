@@ -1,4 +1,6 @@
-my_cat
+c_programs
 ======
 
-C program that functions similarly to the basic UNIX/LINUX "cat" command. This program currently accepts the command "cat" following single or multiple filepaths and opens/prints each to the console respectively.
+A respository devoted to collecting my C programs.
+1. my_cat - A program that replicates the functionality of the Linux command "cat" by storing arguments from the command line and reading files. If cat is executed normally without file specification, it will process the standard input such as echo text back to the user.
+2. stack - A basic stack data structure.
